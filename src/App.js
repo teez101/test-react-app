@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {Button, ButtonGroup, Card, CardBody, CardHeader} from "reactstrap";
 
 function App() {
   return (
@@ -8,7 +9,23 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Taahir <code>src/App.js</code> and save to reload.
+          <Card>
+            <CardHeader>
+              <i className="fa fa-align-justify"></i><strong>Button Group</strong>
+              <div className="card-header-actions">
+                <a href="https://reactstrap.github.io/components/button-group/" rel="noreferrer noopener" target="_blank" className="card-header-action">
+                  <small className="text-muted">docs</small>
+                </a>
+              </div>
+            </CardHeader>
+            <CardBody>
+              <ButtonGroup>
+                <Button>Left</Button>
+                <Button>Middle</Button>
+                <Button>Right</Button>
+              </ButtonGroup>
+            </CardBody>
+          </Card>
         </p>
         <a
           className="App-link"
